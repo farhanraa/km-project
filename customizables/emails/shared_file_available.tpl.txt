@@ -1,0 +1,6 @@
+<Action>
+<div style="margin-top:3px;">
+	<div style="color:gray">{$info.details.date} (<em>{$info.details.date|MySQLTimeDiff}</em>)</div>
+	<div style="margin-left:5px;">{t 1=$info.actionUserInfo.name 2=$info.details.details.share_name}"<strong>%1</strong>" has shared "<strong>%2</strong>" with you.{/t}</div>
+</div>
+</Action>

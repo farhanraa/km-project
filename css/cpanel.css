@@ -1,0 +1,138 @@
+body {
+	font: 13px 'Roboto', Helvetica, sans-serif;
+	color: #000;
+	cursor: default;
+	overflow: hidden;
+}
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #CCCCCC;
+}
+#loadMsg {
+	text-align:center;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 30px;
+}
+#loadMsg div {
+	background-color:white;
+	border-radius:2px;
+	padding:10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,.32),0 8px 40px rgba(0,0,0,.4);
+}
+.x-form-item-label em {color: red;}
+span.formComment {color: #6a6a6a;}
+
+div.error {color: red;}
+div.ok {color: green;}
+
+table {font-size: 13px;}
+table.niceborder {background-color: silver;}
+table.niceborder td {background-color: white;padding:2px;}
+table.niceborder .header {background-color: whitesmoke;}
+
+table.verysmall td {font-size:9px;}
+
+#FR-Tree-Region-xsplit  {
+	border-right: 1px solid #E0E0E0;
+}
+#FR-Tree-Region .x-tree-ec-icon {
+	display: none;
+}
+#FR-Tree-Region .x-tree-elbow-line {
+	width: 12px;
+}
+#FR-Tree-Region .x-tree-node-el {
+	padding-left: 0;
+}
+#FR-Tree-Region .x-panel-body {
+	background-color: white;
+}
+#FR-Tree-Region .x-tree-node .x-tree-selected {
+	border-radius: 2px;
+}
+
+#gridTab .x-panel-tbar {
+	border-bottom: 1px solid #E1E1E1;
+	min-height:46px;
+}
+#gridTab .x-panel-bbar {
+	border-top: 1px solid #E1E1E1;
+}
+#gridTab .x-panel-tbar .x-toolbar-left {
+	padding-left: 5px;
+}
+.FREditForm .x-panel-tbar {
+	border-bottom: 1px solid #E1E1E1;
+}
+.FREditForm .x-panel-tbar .x-toolbar-left {
+	padding-left: 10px;
+}
+.FREditForm .x-panel-header {
+	border-bottom: 1px solid #E1E1E1;
+	padding: 10px 15px;
+}
+.FREditForm .x-panel-header-text {
+	font-weight: normal;
+	color: gray;
+}
+#gridTabPanel .x-grid3-row td, #gridTabPanel .x-grid3-hd-row td {
+	font-size:11px;
+}
+
+
+.adminSection .x-tree-node-icon {display: none;}
+.adminSection {cursor:default;}
+.adminSection * {cursor:default;}
+.adminSection a span {color: gray;}
+.adminNoIcon .x-tree-node-icon {display: none;}
+.sysConfMenuItem {
+	color: gray;
+	margin-top:10px;
+	margin-bottom:10px;
+	cursor: default;
+}
+.sysConfMenuItem img {display: none;}
+.sysConfMenuItem a span {color: black;font-size:16px;}
+.sysConfMenuItem * {cursor:default;}
+
+.avatar-s {
+	height: 24px;
+	width: 24px;
+	border-radius:50%;
+}
+.avatar-xs {
+	height: 18px;
+	width: 18px;
+	border-radius:50%;
+}
+.group-s, .role-s {
+	height: 18px;
+	width: 18px;
+}
+.infoButton {
+	position:absolute;
+	top: 0;
+	right:0;
+}
+.infoButton .frBtn {
+	margin:0;
+	text-align: center;
+}
+.color-white {
+	color:white;
+}
+
+.x-grid3-cell {
+	overflow:hidden;
+}
+.x-grid3-cell-inner {
+	overflow:inherit;
+}

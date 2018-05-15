@@ -1,0 +1,119 @@
+	/* Links */
+a,
+	/* Metadata edit icon */
+.fr-details-fields .fieldsetname a.editIcon:hover,
+	/* Details panel tab icons */
+.fr-info-panel .x-tab-strip-active span.x-tab-strip-text
+{
+	color: #427FED;
+}
+
+	/* Selected folder tree item color */
+.x-tree-node .x-tree-selected i.x-tree-node-icon,
+.x-tree-node .x-tree-selected .x-tree-ec-icon {
+	color: #4285F4;
+}
+
+	/* Tabs */
+.x-tab-strip-top .x-tab-strip-active .x-tab-right {
+	border-bottom-color: #4285F4;
+}
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-right {
+	border-top-color: #4285F4;
+}
+.x-tab-strip-active span.x-tab-strip-text {
+	color: #4285F4;
+}
+
+	/* Buttons */
+.fr-btn-new,
+.fr-btn-new.x-btn-over {
+	background-color: #4285F4;
+	color: white;
+}
+.fr-btn-new.x-btn-over {
+	border-color: transparent;
+}
+.fr-btn-primary,
+.fr-btn-primary.x-btn-over {
+	border-color: #4285F4;
+	background-color: #4285F4;
+}
+
+	/* Grids */
+.x-grid3-row-selected {
+	background-color: #4285F4 !important;
+	border-bottom: 1px solid #3E7DE5;
+}
+.x-grid3-row-selected .x-grid3-col {
+	color: white;
+}
+
+	/* Thumbnail view */
+.tmbItemSel .title,
+.tmbItemSel .thumbFolder {
+	background-color: #4285F4;
+}
+
+.tmbItemSel,
+.tmbItemSel .thumbFolder .icon,
+.tmbItemSel .thumbFolder .filename {
+	color: white;
+}
+	/* Drag and drop */
+.tmbItem.typeFolder.dragged-over .thumbFolder,
+.x-tree-node .x-tree-drag-append,
+.dragged-over {
+	box-shadow: inset 0 0 0 2px #4285F4 !important;
+	background-color: #B0CFEF !important;
+}
+
+	/* Date selector */
+.x-date-inner .x-date-selected a {
+	border-color: #4285F4;
+}
+
+	/* Progress bars */
+.x-progress-inner,
+.ux-progress-cell-background {
+	background-color: #B0CFEF;
+}
+.x-progress-bar,
+.ux-progress-cell-foreground {
+	background-color: #4285F4;
+}
+
+
+	/* Image Viewer - Previous/Next arrows */
+.fr-prv-nav-btn:hover {
+	background: #4285F4;
+}
+
+	/* User activity tab notification bubble */
+.bubbleCount div {
+	background-color: #4285F4;
+	color:white;
+}
+.bubbleCount.alert div {
+	background-color: #E43539;
+}
+
+	/* User comments */
+.comment.own .text {
+	background-color: #4285F4;
+	color: white;
+}
+.comment.own .text .inner:after,
+.comment.own .text .inner:before {
+	border-right-color: transparent;
+	border-left-color: #4285F4;
+}
+
+	/* Multivalue field (For example the Tags field) */
+.x-superboxselect-btns li:hover,
+.x-superboxselect-locked .x-superboxselect-item:hover{
+	color: #427FED;
+}
+.x-superboxselect-item-focus {
+	border-color: #4285F4;
+}

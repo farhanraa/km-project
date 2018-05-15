@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{$app.name|forHTML}</title>
+	<link rel="stylesheet" href="css/style.css?v={$app.settings.currentVersion|forURL}" />
+	<link rel="stylesheet" href="css/ext.php?v={$app.settings.currentVersion|forURL}&theme={$app.settings.ui_theme|forURL}{if $app.config.misc.developmentMode}&debug=1{/if}" />
+	{if $app.config.app.ui.custom_css_url}<link rel="stylesheet" href="{$app.config.app.ui.custom_css_url}?v={$app.settings.currentVersion|forURL}" />{/if}
+	<style>.ext-el-mask { background-color: white; }</style>
+	<script src="js/min.php?extjs=1{if $app.config.misc.developmentMode}&debug=1{/if}&v={$app.settings.currentVersion|forURL}"></script>
+	<script>
+	var URLRoot = '{$app.url.root}';
+	</script>
+	{if $app.headerContent}{include file=$contentTemplateFile}{/if}
+</head>
+
+<body id="theBODY">
+{if !$app.headerContent}{include file=$contentTemplateFile}{/if}
+</body>
+</html>
