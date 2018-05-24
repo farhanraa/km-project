@@ -100,22 +100,22 @@
                         <strong><small>Thread list</small></strong>
                     </li>
                     <li>
-                        <a href="profile.html" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>Fitur 1</a>
+                        <a href="#" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>General</a>
                     </li>
                     <li>
-                        <a href="basic-table.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
                     </li>
                     <li>
-                        <a href="fontawesome.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 3</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 3</a>
                     </li>
                     <li>
-                        <a href="map-google.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 4</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 4</a>
                     </li>
                     <li>
-                        <a href="blank.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 5</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 5</a>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 6</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 6</a>
                     </li>
                 </ul>
             </div>
@@ -195,7 +195,7 @@
 										<small>Tell the purpose of the project.</small>
 									</div>
 									<div class="form-group col-lg-offset-9">
-										<button class="btn btn-success">Create Project</button>
+										<button class="btn btn-success" id="newProjectButton">Create Project</button>
 									</div>
 								</div>
 							</div>
@@ -206,11 +206,11 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Fitur 1</h4> </div>
+                        <h4 class="page-title">General</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
                             <li><a href="index.html">Bank Indonesia</a></li>
-                            <li class="active">Fitur 1</li>
+                            <li class="active">General</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
@@ -417,7 +417,7 @@
 			
 			$('.select2').select2({
 				theme: "bootstrap"
-			});
+			})
 			
 			$('#projectBtn').on('click', function() {
 				var project = $('#project');
@@ -426,6 +426,10 @@
 				} else {
 					window.location.href = "/indofood.html"
 				}
+			})
+			
+			$('#newProjectButton').on('click', function() {
+				window.location.href = "/new-project"
 			})
 		})
     </script>

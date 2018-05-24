@@ -25,6 +25,8 @@
     <link href="css/style.css" rel="stylesheet">
      <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet" />
+	<link href="css/select2-bootstrap.min.css" rel="stylesheet" />
     <!-- color CSS -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -88,32 +90,32 @@
 
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="#" class="waves-effect" data-toggle="modal" data-target="#project"><strong><small>Project</small></strong><br><strong>Bank Indonesia</strong></a>
+                        <a href="#" class="waves-effect" data-toggle="modal" data-target="#project"><strong><small>Project</small></strong><br><strong>Project Baru</strong></a>
                     </li>
                     <div class="center p-20">
                          <a href="#" target="_blank" class="btn btn-success btn-block waves-effect waves-light" data-toggle="modal" data-target="#newThread"><i class="fa  fa-comments fa-fw" aria-hidden="true"></i>New Thread</a>
-                         <a href="repository.html" target="_blank" class="btn btn-info btn-block waves-effect waves-light"><i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>Repository</a>
+                         <a href="repository.html" class="btn btn-info btn-block waves-effect waves-light"><i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>Repository</a>
                     </div>
                     <li style="padding-left:20px;">
                         <strong><small>Thread list</small></strong>
                     </li>
-                    <li>
-                        <a href="profile.html" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>Fitur 1</a>
+					<li>
+                        <a href="#" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>General</a>
                     </li>
                     <li>
-                        <a href="basic-table.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
                     </li>
                     <li>
-                        <a href="fontawesome.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 3</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 3</a>
                     </li>
                     <li>
-                        <a href="map-google.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 4</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 4</a>
                     </li>
                     <li>
-                        <a href="blank.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 5</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 5</a>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 6</a>
+                        <a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 6</a>
                     </li>
                 </ul>
             </div>
@@ -204,50 +206,110 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Repository</h4> </div>
+                        <h4 class="page-title">General</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
-                            <li><a href="#">Bank Indonesia</a></li>
-                            <li class="active">Repository</li>
+                            <li><a href="index.html">Project Baru</a></li>
+                            <li class="active">General</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <h4><strong>Folders</strong></h4>
-                <div class="row">
-                    <div class="col-md-3 col-lg-3">
-                        <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Docs</a>
+                <div class="row bubbleMsg">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="white-box">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="plugins/images/users/varun.jpg" alt="user-img" width="48" class="img-circle">
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Varun - Today 00:00</h6>
+                                            <div class="chatBubbleLeft"><p>Kira kira ada yang punya file bulan lalu gak?</p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <div class="col-md-3 col-lg-3">
-                        <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Presentations</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3">
-                        <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Excel</a>
-                        </div>
-                    </div>
-                    
                 </div>
-                <h4><strong>Files</strong></h4>
-                <div class="row">
-                    <div class="col-md-3 col-lg-3">
-                        <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa fa-file-image-o fa-fw" aria-hidden="true" style="margin-right: 15px"></i>dokumen-header...</a>
+                <div class="row bubbleMsg">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="white-box">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="plugins/images/users/arijit.jpg" alt="user-img" width="48" class="img-circle">
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Arijit - Today 00:01</h6>
+                                            <div class="chatBubbleLeft"><p>Kira kira ada yang punya file bulan lalu gak?</p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
+                </div>
+                <div class="row bubbleMsg">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="white-box">
+                             <table>
+                                <tr>
+                                    <td>
+                                        <img src="plugins/images/users/varun.jpg" alt="user-img" width="48" class="img-circle">
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Varun - Today 00:02</h6>
+                                            <div class="chatBubbleLeft"><p>Kira kira ada yang punya file bulan lalu gak?</p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<div class="row bubbleMsg">
+                    <div class="col-md-offset-6 col-md-6">
+                        <div class="white-box chatBubbleContainer">
+                             <table>
+                                <tr>
+                                    <td>
 
-                    <div class="col-md-3 col-lg-3">
-                        <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa fa-file-image-o fa-fw" aria-hidden="true" style="margin-right: 15px"></i>dokumen-footer..</a>
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Steave - Today 00:03</h6>
+                                            <div><p>Kira kira ada yang punya file bulan lalu gak?
+                                            </p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /.container-fluid -->
+            <footer class="footer text-center" style="position: fixed;"> 
+                <table class="borderless">
+					<tr>
+						<td style="text-align: center; vertical-align:top" class="col-md-1">
+							<input type="file" name="myfile" id="upload" value="" style="display:none"/>
+							<button class="btn" id="uploadBtn">+</button>
+						</td>
+						<td style="text-align: center; vertical-align:top" class="col-md-10">
+							<textarea id="messageContainer" type="text" placeholder="Say something..." value="" class="form-control form-control-line"></textarea><textarea id="messageContainer" type="text" placeholder="Say something..." value="" class="form-control form-control-line"></textarea>
+						</td>
+						<td style="text-align: center; vertical-align:top" class="col-md-1">
+							<button class="btn btn-square" id="sendMsg">Send</button>
+						</td>
+					</tr>
+				</table>
+            </footer>
         </div>
         <!-- ============================================================== -->
         <!-- End Page Content -->
@@ -279,19 +341,97 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
     <script src="js/dashboard1.js"></script>
+	<script src="js/select2.min.js"></script>
     <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
     <script type="text/javascript">
-        function {
-            document.getElementById('upload').click();
-            var upload = document.getElementById('upload').files[0].name;
-        }
-        function sendMsg(){
-            var today = new Date();
-            var time = today.getHours() + ':' + today.getMinutes();
-            console.log(time);         
-            var msg = document.getElementById('messageContainer').value;
-            console.log(msg);
-        }
+        $(document).ready(function() {
+			function newMsg(text) {
+				var last = $('.bubbleMsg').last();
+				var today = new Date();
+				last.after(
+					'<div class="row bubbleMsg">' +
+						'<div class="col-md-offset-6 col-md-6">' +
+							'<div class="white-box chatBubbleContainer">' +
+								 '<table>' +
+									'<tr>' +
+										'<td>' +
+											'<ul style="list-style: none;">' +
+												'<h6>' +
+												'Steave - Today ' + today.getHours() + ':' + today.getMinutes() +
+												'</h6>' +
+												'<div><p>' +
+												text +
+												'</p></div>' +
+											'</ul>' +
+										'</td>' +
+									'</tr>' +
+								'</table>' +
+							'</div>' +
+						'</div>' +
+					'</div>'
+				);
+				bottomPage();
+			}
+			
+			function bottomPage() {
+				$("html, body").animate({ scrollTop: $(document).height() }, 1);
+			}
+			
+			bottomPage();
+			
+			$('#uploadBtn').on('click', function() {
+				$('#upload').click();
+			})
+			
+			$('#upload').on('change', function() {
+				var fileName = $('#upload').val().split('\\').pop();
+				if(fileName.length > 0) {
+					fileName = '<a href="#">' + fileName + '</a>';
+					newMsg(fileName);
+					$('#upload').val('')
+				}
+			})
+			
+			$('#sendMsg').on('click', function() {
+				var text = $('#messageContainer').val();
+				var check = text.replace(/\s/g, '');
+				if(text.length > 0 || fileName.length > 0) {
+					newMsg(text);
+					$('#messageContainer').val('');
+				}
+			})
+			
+			$('#newThreadBtn').on('click', function() {
+				
+				var nav = $('#side-menu');
+				var newThread = $('#threadName').val();
+				nav.append(
+					'<li>' +
+                        '<a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>' +
+							newThread +
+						'</a>' +
+                    '</li>'
+				);
+				$('#newThread').modal('toggle');
+			})
+			
+			$('.select2').select2({
+				theme: "bootstrap"
+			})
+			
+			$('#projectBtn').on('click', function() {
+				var project = $('#project');
+				if(project == 1) {
+					window.location.href = "/index.html"
+				} else {
+					window.location.href = "/indofood.html"
+				}
+			})
+			
+			$('#newProjectButton').on('click', function() {
+				window.location.href = "/new-project"
+			})
+		})
     </script>
 </body>
 

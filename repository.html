@@ -128,31 +128,31 @@
         <div id="page-wrapper">
             <!-- Modal -->
             <div class="modal fade" id="newThread" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="padding: 6.75rem;">
-                          <h1><strong>Create new thread</strong></h1>
-                          <p><small>Thread are where your members collaborate. Try to name it as specific as possible -- Fitur 1, for example.</small></p>
-                            <div class="form-group">
-                                <label for="threadName">Name:</label>
-                                <input type="text" class="form-control" id="threadName" name="threadName">
-                                <small>Name must be specific and describe what topic you want to talk about.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="collaborators">Collaborator:</label>
-                                <select class="select2" id="collaborators" name="collaborators[]" multiple="multiple" style="width:100%">
-                                    <option>Varun</option>
-                                    <option>Arijit</option>
-                                </select>
-                                <small>Specify the person you want to contribute  in this thread.</small>
-                            </div>
-                            <div class="form-group col-lg-offset-7">
-                                <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button class="btn btn-success" id="newThreadBtn">Create Thread</button>
-                            </div>
-                        </div>
-                    </div>
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header" style="padding: 6.75rem;">
+						  <h1><strong>Create new thread</strong></h1>
+						  <p><small>Thread are where your members collaborate. Try to name it as specific as possible -- Fitur 1, for example.</small></p>
+							<div class="form-group">
+								<label for="threadName">Name:</label>
+								<input type="text" class="form-control" id="threadName" name="threadName">
+								<small>Name must be specific and describe what topic you want to talk about.</small>
+							</div>
+							<div class="form-group">
+								<label for="collaborators">Collaborator:</label>
+								<select class="select2" id="collaborators" name="collaborators[]" multiple="multiple" style="width:100%">
+									<option>Varun</option>
+									<option>Arijit</option>
+								</select>
+								<small>Specify the person you want to contribute  in this thread.</small>
+							</div>
+							<div class="form-group col-lg-offset-7">
+								<button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								<button class="btn btn-success" id="newThreadBtn">Create Thread</button>
+							</div>
+						</div>
+					</div>
                 </div>
             </div>
               <!-- Modal -->
@@ -160,40 +160,47 @@
                 <div class="modal-dialog">
                 
                   <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="padding: 6.75rem;">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h1><strong>Project</strong></h1>
-                            <p><small>Project are where you and your team can share your ideas, files, and things that relate to your project. Project also have private repository that contain files that relate to your project.</small></p>
-                            
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a id="projectList-tab" href="#projectList" class="active" data-toggle="tab" role="tab" aria-selected="true" aria-controls="projectList" >Project list</a></li>
-                                <li><a id="createList-tab" href="#createProject" data-toggle="tab" role="tab" aria-selected="false" aria-controls="createProject" >Create project</a></li>
-                            </ul> 
-                            
-                            <div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab"><br>
-                                <input type="text" class="form-control" name="projectName" placeholder="Search your project">
-                                <small>Just type your project name above.</small>
-                            </div>
-                            <div class="tab-pane fade" id="createProject" role="tabpanel" aria-labelledby="createList-tab">
-                                <div class="form-group">
-                                    <label for="usr">Name:</label>
-                                    <input type="text" class="form-control" name="threadName">
-                                    <small>Name must be specific.</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Purpose:</label>
-                                    <input type="text" class="form-control" name="collaborator">
-                                    <small>Tell the purpose of the project.</small>
-                                </div>
-                                <div class="form-group col-lg-offset-9">
-                                    <button class="btn btn-success">Create Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+					<div class="modal-content">
+						<div class="modal-header" style="padding: 6.75rem;">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h1><strong>Project</strong></h1>
+							<p><small>Project are where you and your team can share your ideas, files, and things that relate to your project. Project also have private repository that contain files that relate to your project.</small></p>
+							
+							<ul class="nav nav-tabs">
+								<li class="active"><a id="projectList-tab" href="#projectList" class="active" data-toggle="tab" role="tab" aria-selected="true" aria-controls="projectList" >Project list</a></li>
+								<li><a id="createList-tab" href="#createProject" data-toggle="tab" role="tab" aria-selected="false" aria-controls="createProject" >Create project</a></li>
+							</ul> 
+							<div class="tab-content">
+								<div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab">
+									<select class="select2" id="project" name="project" style="width:100%">
+										<option value="1">Bank Indonesia</option>
+										<option value="2">PT Indofood CRM</option>
+									</select>
+									<small>Just type your project name above.</small>
+									<div class="form-group col-lg-offset-9">
+										<button class="btn btn-success" id="projectBtn">Select Project</button>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="createProject" role="tabpanel" aria-labelledby="createList-tab">
+									<div class="form-group">
+										<label for="usr">Name:</label>
+										<input type="text" class="form-control" name="threadName">
+										<small>Name must be specific.</small>
+									</div>
+									<div class="form-group">
+										<label for="usr">Purpose:</label>
+										<input type="text" class="form-control" name="collaborator">
+										<small>Tell the purpose of the project.</small>
+									</div>
+									<div class="form-group col-lg-offset-9">
+										<button class="btn btn-success" id="newProjectButton">Create Project</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
