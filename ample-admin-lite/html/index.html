@@ -88,11 +88,17 @@
 
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="#" class="waves-effect"><strong>Bank Indonesia Project </strong></a>
-                        
+                        <a href="#" class="waves-effect" data-toggle="modal" data-target="#project"><strong><small>Project</small></strong><br><strong>Bank Indonesia</strong></a>
+                    </li>
+                    <div class="center p-20">
+                         <a href="#" target="_blank" class="btn btn-success btn-block waves-effect waves-light" data-toggle="modal" data-target="#newThread"><i class="fa  fa-comments fa-fw" aria-hidden="true"></i>New Thread</a>
+                         <a href="#" target="_blank" class="btn btn-info btn-block waves-effect waves-light"><i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>Repository</a>
+                    </div>
+                    <li style="padding-left:20px;">
+                        <strong><small>Thread list</small></strong>
                     </li>
                     <li>
-                        <a href="profile.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 1</a>
+                        <a href="profile.html" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>Fitur 1</a>
                     </li>
                     <li>
                         <a href="basic-table.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
@@ -111,10 +117,6 @@
                     </li>
 
                 </ul>
-                <div class="center p-20">
-                     <a href="#" target="_blank" class="btn btn-success btn-block waves-effect waves-light" data-toggle="modal" data-target="#newThread"><i class="fa  fa-comments fa-fw" aria-hidden="true"></i>New Thread</a>
-                     <a href="#" target="_blank" class="btn btn-info btn-block waves-effect waves-light"><i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>Repository</a>
-                </div>
             </div>
             
         </div>
@@ -152,19 +154,43 @@
                         </div>
                       </form>
                     </div>
-                  </div>
-                  
+                  </div> 
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="project" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header" style="padding: 6.75rem;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1><strong>Project</strong></h1>
+                        <p><small>Project are where you and your team can share your ideas, files, and things that relate to your project. Project also have private repository that contain files that relate to your project.</small></p>
+                        
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a id="projectList-tab" class="active" data-toggle="tab" role="tab" aria-selected="true" aria-controls="projectList" href="#projectList">Project list</a></li>
+                            <li><a id="createList-tab" data-toggle="tab" role="tab" aria-selected="false" aria-controls="createProject" href="#createProject">Create project</a></li>
+                        </ul> 
+                        <div class="tab-pane fade out" id="createProject" role="tabpanel" aria-labelledby="createList-tab">
+                            Create Project
+                        </div>
+                        <div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab"><br>
+                            <input type="text" class="form-control" name="projectName" placeholder="Search your project">
+                        </div>
+                        
+                    </div>
+                  </div> 
                 </div>
               </div>
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Blank Page</h4> </div>
+                        <h4 class="page-title">Fitur 1</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <a href="https://wrappixel.com/templates/ampleadmin/" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
-                            <li class="active">Blank Page</li>
+                            <li class="active">Fitur 1</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
