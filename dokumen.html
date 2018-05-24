@@ -172,7 +172,7 @@
 							</ul> 
 							<div class="tab-content">
 								<div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab">
-									<select class="select2" id="project" name="project" style="width:100%">
+									<select class="select2" id="projectId" name="project" style="width:100%">
 										<option value="1">Bank Indonesia</option>
 										<option value="2">PT Indofood CRM</option>
 									</select>
@@ -281,17 +281,94 @@
     <script src="js/dashboard1.js"></script>
     <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
     <script type="text/javascript">
-        function {
-            document.getElementById('upload').click();
-            var upload = document.getElementById('upload').files[0].name;
-        }
-        function sendMsg(){
-            var today = new Date();
-            var time = today.getHours() + ':' + today.getMinutes();
-            console.log(time);         
-            var msg = document.getElementById('messageContainer').value;
-            console.log(msg);
-        }
+        $(document).ready(function() {
+			function newMsg(text) {
+				var last = $('.container-fluid').last();
+				var today = new Date();
+				last.append(
+					'<div class="row bubbleMsg">' +
+						'<div class="col-md-offset-6 col-md-6">' +
+							'<div class="white-box chatBubbleContainer">' +
+								 '<table>' +
+									'<tr>' +
+										'<td>' +
+											'<ul style="list-style: none;">' +
+												'<h6>' +
+												'Steave - Today ' + today.getHours() + ':' + today.getMinutes() +
+												'</h6>' +
+												'<div><p>' +
+												text +
+												'</p></div>' +
+											'</ul>' +
+										'</td>' +
+									'</tr>' +
+								'</table>' +
+							'</div>' +
+						'</div>' +
+					'</div>'
+				);
+				bottomPage();
+			}
+			
+			function bottomPage() {
+				$("html, body").animate({ scrollTop: $(document).height() }, 1);
+			}
+			
+			bottomPage();
+			
+			$('#uploadBtn').on('click', function() {
+				$('#upload').click();
+			})
+			
+			$('#upload').on('change', function() {
+				var fileName = $('#upload').val().split('\\').pop();
+				if(fileName.length > 0) {
+					fileName = '<a href="#">' + fileName + '</a>';
+					newMsg(fileName);
+					$('#upload').val('')
+				}
+			})
+			
+			$('#sendMsg').on('click', function() {
+				var text = $('#messageContainer').val();
+				var check = text.replace(/\s/g, '');
+				if(text.length > 0) {
+					newMsg(text);
+					$('#messageContainer').val('');
+				}
+			})
+			
+			$('#newThreadBtn').on('click', function() {
+				
+				var nav = $('#side-menu');
+				var newThread = $('#threadName').val();
+				nav.append(
+					'<li>' +
+                        '<a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>' +
+							newThread +
+						'</a>' +
+                    '</li>'
+				);
+				$('#newThread').modal('toggle');
+			})
+			
+			$('.select2').select2({
+				theme: "bootstrap"
+			})
+			
+			$('#projectBtn').on('click', function() {
+				var project = $('#projectId').val();
+				if(project == 1) {
+					window.location.href = "/index.html"
+				} else {
+					window.location.href = "/indofood.html"
+				}
+			})
+			
+			$('#newProjectButton').on('click', function() {
+				window.location.href = "/new-project.html"
+			})
+		})
     </script>
 </body>
 
