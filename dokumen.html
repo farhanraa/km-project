@@ -272,7 +272,7 @@
                 <div class="row files">
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa fa-file-image-o fa-fw" aria-hidden="true" style="margin-right: 15px"></i>dokumen-header...</a>
+                          <a href="#" style="color: black;"><i class="fa fa-file-image-o fa-fw" aria-hidden="true" style="margin-right: 15px"></i>dokumen-ax</a>
                         </div>
                     </div>
 
@@ -327,6 +327,9 @@
 			$('#upload').on('change', function() {
 				var fileName = $('#upload').val().split('\\').pop();
 				if(fileName.length > 0) {
+					if(fileName.length > 16) {
+						fileName = fileName.substring(0,14) + "..";
+					}
 					var files = $('.files');
 					files.append(
 						'<div class="col-md-3 col-lg-3">' +
