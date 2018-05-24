@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Wawasan - Difini Technology</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="../plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="../plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="../plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+     <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet" />
+	<link href="css/select2-bootstrap.min.css" rel="stylesheet" />
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part" style="width: 240px;height:60px;">
+                    <!-- Logo -->
+                    <a class="logo" href="index.html">
+                        <img src="../plugins/images/Difinite_logo.png" alt="home" class="light-logo" style="width:60%;" />
+                    </a>
+                    <div></div>
+                </div>
+                <!-- /Logo -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
+                    </li>
+                    <li>
+                        <a class="profile-pic" href="#"> <img src="../plugins/images/users/pawandeep.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
+                </div>
+
+
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 70px 0 0;">
+                        <a href="#" class="waves-effect" data-toggle="modal" data-target="#project"><strong><small>Project</small></strong><br><strong>Bank Indonesia</strong></a>
+                    </li>
+                    <div class="center p-20">
+                         <a href="#" target="_blank" class="btn btn-success btn-block waves-effect waves-light" data-toggle="modal" data-target="#newThread"><i class="fa  fa-comments fa-fw" aria-hidden="true"></i>New Thread</a>
+                         <a href="#" target="_blank" class="btn btn-info btn-block waves-effect waves-light"><i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>Repository</a>
+                    </div>
+                    <li style="padding-left:20px;">
+                        <strong><small>Thread list</small></strong>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>Fitur 1</a>
+                    </li>
+                    <li>
+                        <a href="basic-table.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
+                    </li>
+                    <li>
+                        <a href="fontawesome.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 3</a>
+                    </li>
+                    <li>
+                        <a href="map-google.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 4</a>
+                    </li>
+                    <li>
+                        <a href="blank.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 5</a>
+                    </li>
+                    <li>
+                        <a href="404.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 6</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <!-- Modal -->
+            <div class="modal fade" id="newThread" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header" style="padding: 6.75rem;">
+						  <h1><strong>Create new thread</strong></h1>
+						  <p><small>Thread are where your members collaborate. Try to name it as specific as possible -- Fitur 1, for example.</small></p>
+							<div class="form-group">
+								<label for="threadName">Name:</label>
+								<input type="text" class="form-control" id="threadName" name="threadName">
+								<small>Name must be specific and describe what topic you want to talk about.</small>
+							</div>
+							<div class="form-group">
+								<label for="collaborators">Collaborator:</label>
+								<select class="select2" id="collaborators" name="collaborators[]" multiple="multiple" style="width:100%">
+									<option>Varun</option>
+									<option>Arijit</option>
+								</select>
+								<small>Specify the person you want to contribute  in this thread.</small>
+							</div>
+							<div class="form-group col-lg-offset-7">
+								<button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								<button class="btn btn-success" id="newThreadBtn">Create Thread</button>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+              <!-- Modal -->
+            <div class="modal fade" id="project" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header" style="padding: 6.75rem;">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h1><strong>Project</strong></h1>
+							<p><small>Project are where you and your team can share your ideas, files, and things that relate to your project. Project also have private repository that contain files that relate to your project.</small></p>
+							
+							<ul class="nav nav-tabs">
+								<li class="active"><a id="projectList-tab" href="#projectList" class="active" data-toggle="tab" role="tab" aria-selected="true" aria-controls="projectList" >Project list</a></li>
+								<li><a id="createList-tab" href="#createProject" data-toggle="tab" role="tab" aria-selected="false" aria-controls="createProject" >Create project</a></li>
+							</ul> 
+							
+							<div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab"><br>
+								<input type="text" class="form-control" name="projectName" placeholder="Search your project">
+								<small>Just type your project name above.</small>
+							</div>
+							<div class="tab-pane fade" id="createProject" role="tabpanel" aria-labelledby="createList-tab">
+								<div class="form-group">
+									<label for="usr">Name:</label>
+									<input type="text" class="form-control" name="threadName">
+									<small>Name must be specific.</small>
+								</div>
+								<div class="form-group">
+									<label for="usr">Purpose:</label>
+									<input type="text" class="form-control" name="collaborator">
+									<small>Tell the purpose of the project.</small>
+								</div>
+								<div class="form-group col-lg-offset-7">
+									<button class="btn btn-secondary">Cancel</button>
+									<button class="btn btn-success">Create Project</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Fitur 1</h4> </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Bank Indonesia</a></li>
+                            <li class="active">Fitur 1</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row bubbleMsg">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="white-box">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="../plugins/images/users/varun.jpg" alt="user-img" width="48" class="img-circle">
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Varun - Today 00:00</h6>
+                                            <div class="chatBubbleLeft"><p>Kira kira ada yang punya file bulan lalu gak?</p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bubbleMsg">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="white-box">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="../plugins/images/users/arijit.jpg" alt="user-img" width="48" class="img-circle">
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Arijit - Today 00:01</h6>
+                                            <div class="chatBubbleLeft"><p>Kira kira ada yang punya file bulan lalu gak?</p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bubbleMsg">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="white-box">
+                             <table>
+                                <tr>
+                                    <td>
+                                        <img src="../plugins/images/users/varun.jpg" alt="user-img" width="48" class="img-circle">
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Varun - Today 00:02</h6>
+                                            <div class="chatBubbleLeft"><p>Kira kira ada yang punya file bulan lalu gak?</p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<div class="row bubbleMsg">
+                    <div class="col-md-offset-6 col-md-6">
+                        <div class="white-box chatBubbleContainer">
+                             <table>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <ul style="list-style: none;">
+                                            <h6>Steave - Today 00:03</h6>
+                                            <div><p>Kira kira ada yang punya file bulan lalu gak?
+                                            </p></div>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center" style="position: fixed;"> 
+                <table class="borderless">
+					<tr>
+						<td style="text-align: center; vertical-align:top" class="col-md-1">
+							<input type="file" name="myfile" id="upload" value="" style="display:none"/>
+							<button class="btn" id="uploadBtn">+</button>
+						</td>
+						<td style="text-align: center; vertical-align:top" class="col-md-10">
+							<textarea id="messageContainer" type="text" placeholder="Say something..." value="" class="form-control form-control-line"></textarea><textarea id="messageContainer" type="text" placeholder="Say something..." value="" class="form-control form-control-line"></textarea>
+						</td>
+						<td style="text-align: center; vertical-align:top" class="col-md-1">
+							<button class="btn btn-square" id="sendMsg">Send</button>
+						</td>
+					</tr>
+				</table>
+            </footer>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Counter js -->
+    <script src="../plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="../plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!-- chartist chart -->
+    <script src="../plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
+    <script src="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- Sparkline chart JavaScript -->
+    <script src="../plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="js/dashboard1.js"></script>
+	<script src="js/select2.min.js"></script>
+    <script src="../plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+			function newMsg(text) {
+				var last = $('.bubbleMsg').last();
+				var today = new Date();
+				last.after(
+					'<div class="row bubbleMsg">' +
+						'<div class="col-md-offset-6 col-md-6">' +
+							'<div class="white-box chatBubbleContainer">' +
+								 '<table>' +
+									'<tr>' +
+										'<td>' +
+											'<ul style="list-style: none;">' +
+												'<h6>' +
+												'Steave - Today ' + today.getHours() + ':' + today.getMinutes() +
+												'</h6>' +
+												'<div><p>' +
+												text +
+												'</p></div>' +
+											'</ul>' +
+										'</td>' +
+									'</tr>' +
+								'</table>' +
+							'</div>' +
+						'</div>' +
+					'</div>'
+				);
+				bottomPage();
+			}
+			
+			function bottomPage() {
+				$("html, body").animate({ scrollTop: $(document).height() }, 1);
+			}
+			
+			bottomPage();
+			
+			$('#uploadBtn').on('click', function() {
+				$('#upload').click();
+			})
+			
+			$('#upload').on('change', function() {
+				var fileName = $('#upload').val().split('\\').pop();
+				if(fileName.length > 0) {
+					fileName = '<a href="#">' + fileName + '</a>';
+					newMsg(fileName);
+					$('#upload').val('')
+				}
+			})
+			
+			$('#sendMsg').on('click', function() {
+				var text = $('#messageContainer').val();
+				var check = text.replace(/\s/g, '');
+				if(text.length > 0 || fileName.length > 0) {
+					newMsg(text);
+					$('#messageContainer').val('');
+				}
+			})
+			
+			$('#newThreadBtn').on('click', function() {
+				
+				var nav = $('#side-menu');
+				var newThread = $('#threadName').val();
+				nav.append(
+					'<li>' +
+                        '<a href="#" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>' +
+							newThread +
+						'</a>' +
+                    '</li>'
+				);
+				$('#newThread').modal('toggle');
+			})
+			
+			$('.select2').select2({
+				theme: "bootstrap"
+			});
+		})
+    </script>
+</body>
+
+</html>
