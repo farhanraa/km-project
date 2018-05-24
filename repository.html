@@ -56,7 +56,7 @@
                 <div class="top-left-part" style="width: 240px;height:60px;">
                     <!-- Logo -->
                     <a class="logo" href="index.html">
-                        <img src="plugins/images/Difinite_logo.png" alt="home" class="light-logo" style="width:60%;" />
+                        <img src="plugins/images/difinite.png" alt="home" class="light-logo" style="width:60%;" />
                     </a>
                     <div></div>
                 </div>
@@ -67,7 +67,7 @@
                             <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
                     </li>
                     <li>
-                        <a class="profile-pic" href="#"> <img src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b></a>
+                        <a class="profile-pic" href="#"> <img src="plugins/images/users/pawandeep.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b></a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +98,7 @@
                         <strong><small>Thread list</small></strong>
                     </li>
                     <li>
-                        <a href="profile.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 1</a>
+                        <a href="profile.html" class="waves-effect active"><i class="fa fa-slack fa-fw" aria-hidden="true" active></i>Fitur 1</a>
                     </li>
                     <li>
                         <a href="basic-table.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 2</a>
@@ -115,7 +115,6 @@
                     <li>
                         <a href="404.html" class="waves-effect"><i class="fa fa-slack fa-fw" aria-hidden="true"></i>Fitur 6</a>
                     </li>
-
                 </ul>
             </div>
             
@@ -128,75 +127,73 @@
         <!-- ============================================================== -->
         <div id="page-wrapper">
             <!-- Modal -->
-              <div class="modal fade" id="newThread" role="dialog">
+            <div class="modal fade" id="newThread" role="dialog">
                 <div class="modal-dialog">
-                
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header" style="padding: 6.75rem;">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h1><strong>Create new thread</strong></h1>
-                      <p><small>Thread are where your members collaborate. Try to name it as specific as possible -- Fitur 1, for example.</small></p>
-                      <form>
-                        <div class="form-group">
-                            <label for="usr">Name:</label>
-                            <input type="text" class="form-control" name="threadName">
-                            <small>Name must be specific and describe what topic you want to talk about.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="usr">Collaborator:</label>
-                            <input type="text" class="form-control" name="collaborator">
-                            <small>Specify the person you want to contribute  in this thread.</small>
-                        </div>
-                        <div class="form-group col-lg-offset-7">
-                            <button class="btn btn-secondary">Cancel</button>
-                            <button class="btn btn-success">Create Thread</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-              <!-- Modal -->
-              <div class="modal fade" id="project" role="dialog">
-                <div class="modal-dialog">
-                
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header" style="padding: 6.75rem;">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1><strong>Project</strong></h1>
-                        <p><small>Project are where you and your team can share your ideas, files, and things that relate to your project. Project also have private repository that contain files that relate to your project.</small></p>
-                        
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a id="projectList-tab" href="#projectList" class="active" data-toggle="tab" role="tab" aria-selected="true" aria-controls="projectList" >Project list</a></li>
-                            <li><a id="createList-tab" href="#createProject" data-toggle="tab" role="tab" aria-selected="false" aria-controls="createProject" >Create project</a></li>
-                        </ul> 
-                        
-                        <div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab"><br>
-                            <input type="text" class="form-control" name="projectName" placeholder="Search your project">
-                            <small>Just type your project name above.</small>
-                        </div>
-                        <div class="tab-pane fade" id="createProject" role="tabpanel" aria-labelledby="createList-tab">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="padding: 6.75rem;">
+                          <h1><strong>Create new thread</strong></h1>
+                          <p><small>Thread are where your members collaborate. Try to name it as specific as possible -- Fitur 1, for example.</small></p>
                             <div class="form-group">
-                                <label for="usr">Name:</label>
-                                <input type="text" class="form-control" name="threadName">
-                                <small>Name must be specific.</small>
+                                <label for="threadName">Name:</label>
+                                <input type="text" class="form-control" id="threadName" name="threadName">
+                                <small>Name must be specific and describe what topic you want to talk about.</small>
                             </div>
                             <div class="form-group">
-                                <label for="usr">Purpose:</label>
-                                <input type="text" class="form-control" name="collaborator">
-                                <small>Tell the purpose of the project.</small>
+                                <label for="collaborators">Collaborator:</label>
+                                <select class="select2" id="collaborators" name="collaborators[]" multiple="multiple" style="width:100%">
+                                    <option>Varun</option>
+                                    <option>Arijit</option>
+                                </select>
+                                <small>Specify the person you want to contribute  in this thread.</small>
                             </div>
                             <div class="form-group col-lg-offset-7">
-                                <button class="btn btn-secondary">Cancel</button>
-                                <button class="btn btn-success">Create Project</button>
+                                <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-success" id="newThreadBtn">Create Thread</button>
                             </div>
                         </div>
                     </div>
-                  </div> 
                 </div>
-              </div>
+            </div>
+              <!-- Modal -->
+            <div class="modal fade" id="project" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header" style="padding: 6.75rem;">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h1><strong>Project</strong></h1>
+                            <p><small>Project are where you and your team can share your ideas, files, and things that relate to your project. Project also have private repository that contain files that relate to your project.</small></p>
+                            
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a id="projectList-tab" href="#projectList" class="active" data-toggle="tab" role="tab" aria-selected="true" aria-controls="projectList" >Project list</a></li>
+                                <li><a id="createList-tab" href="#createProject" data-toggle="tab" role="tab" aria-selected="false" aria-controls="createProject" >Create project</a></li>
+                            </ul> 
+                            
+                            <div class="tab-pane fade active in" id="projectList" role="tabpanel" aria-labelledby="projectList-tab"><br>
+                                <input type="text" class="form-control" name="projectName" placeholder="Search your project">
+                                <small>Just type your project name above.</small>
+                            </div>
+                            <div class="tab-pane fade" id="createProject" role="tabpanel" aria-labelledby="createList-tab">
+                                <div class="form-group">
+                                    <label for="usr">Name:</label>
+                                    <input type="text" class="form-control" name="threadName">
+                                    <small>Name must be specific.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usr">Purpose:</label>
+                                    <input type="text" class="form-control" name="collaborator">
+                                    <small>Tell the purpose of the project.</small>
+                                </div>
+                                <div class="form-group col-lg-offset-9">
+                                    <button class="btn btn-success">Create Project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
@@ -212,34 +209,34 @@
                 <div class="row">
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Proposal</a>
+                          <a href="dokumen.html" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Proposal</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Planning</a>
+                          <a href="dokumen.html" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Planning</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Design</a>
+                          <a href="dokumen.html" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Design</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Closing</a>
+                          <a href="dokumen.html" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Project Closing</a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Image</a>
+                          <a href="dokumen.html" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>Image</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <div class="white-box" style="font-size: 18px;">
-                          <a href="#" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>References</a>
+                          <a href="dokumen.html" style="color: black;"><i class="fa  fa fa-folder fa-fw" aria-hidden="true" style="margin-right: 15px"></i>References</a>
                         </div>
                     </div>
                 </div>
