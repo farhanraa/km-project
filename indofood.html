@@ -346,9 +346,9 @@
     <script type="text/javascript">
         $(document).ready(function() {
 			function newMsg(text) {
-				var last = $('.bubbleMsg').last();
+				var last = $('.container-fluid').last();
 				var today = new Date();
-				last.after(
+				last.append(
 					'<div class="row bubbleMsg">' +
 						'<div class="col-md-offset-6 col-md-6">' +
 							'<div class="white-box chatBubbleContainer">' +
@@ -395,7 +395,7 @@
 			$('#sendMsg').on('click', function() {
 				var text = $('#messageContainer').val();
 				var check = text.replace(/\s/g, '');
-				if(text.length > 0 || fileName.length > 0) {
+				if(text.length > 0) {
 					newMsg(text);
 					$('#messageContainer').val('');
 				}

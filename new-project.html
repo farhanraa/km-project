@@ -303,7 +303,7 @@
 			$('#sendMsg').on('click', function() {
 				var text = $('#messageContainer').val();
 				var check = text.replace(/\s/g, '');
-				if(text.length > 0 || fileName.length > 0) {
+				if(text.length > 0) {
 					newMsg(text);
 					$('#messageContainer').val('');
 				}
